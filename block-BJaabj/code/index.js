@@ -58,7 +58,7 @@ function getTable() {
   let num = +prompt(`Enter a number`);
   for(i=1; i <= 10; i++) {
     const result = num * i;
-  
+
   console.log(`${num} * ${i} = ${result}`)
   }
 }
@@ -72,8 +72,7 @@ getTable();
 */
 function isLeapYear() {
   let year = +prompt(`Enter a year`)
-  let leapYear = year % 4;
-  if(leapYear == 0) {
+  if(year % 4 == 0) {
     alert(`${year} is a leap year`)
   } else {
     alert(`${year} is not a leap year`)
