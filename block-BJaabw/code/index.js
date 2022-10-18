@@ -11,8 +11,9 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(num) {
+  let seconds = num * 60;
+  return seconds;
 }
 // - Execute the function with required parameter
 
@@ -26,8 +27,12 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(x,y,z) {
+  if(x < z && y > z){
+    return true
+  } else{
+    return false
+  }
 }
 // - Execute the function with required parameter
 
@@ -49,8 +54,18 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
+function calculateBMI(weight, height) {
+  let BMI = weight / (height/100 * height/100)
+  alert(`Your BMI is ${BMI}`)
+  if(BMI < 18.5) {
+    return `You are underweight`;
+  } else if(BMI <= 18.5 && BMI > 24.9) {
+    return `Your weight is normal`;
+  } else if(BMI <= 25 && BMI > 29.9){
+    return `You are OverWeight!`;
+  } else if(BMI >= 30){
+    return `You are Obese!`;
+  }
 }
 
 /* 3. appropiateDrinks
@@ -64,8 +79,16 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
+function appropiateDrinks(age) {
+  if(age < 14 ) {
+    return`Drink Fruit Juice!`
+  } else if(age >= 15 && age < 18) {
+    return `Drink Soda!`
+  } else if(age >= 19 && age < 21) {
+    return `Drink Fruit-Flavoured Beer!`
+  } else if(age >= 21) {
+    return `Drink Throat Piercing Vodka!`
+  }
 }
 
 /* 4. Add two numers or string
@@ -79,8 +102,11 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
-  // Your code
+function sum(a,b) {
+  if(a == Number, b == Number) {
+    return a + b
+  }
+  
 }
 
 // Function Test
