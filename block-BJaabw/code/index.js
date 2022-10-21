@@ -30,9 +30,7 @@ isInRange(1, 10, 19); // false
 function isInRange(x,y,z) {
   if(x < z && y > z){
     return true
-  } else{
-    return false
-  }
+  }  return false
 }
 // - Execute the function with required parameter
 
@@ -56,7 +54,7 @@ Obese: BMI is 30 or more
 
 function calculateBMI(weight, height) {
   let BMI = weight / (height * height)
-  alert(`Your BMI is ${BMI}`)
+  console.log(`Your BMI is ${BMI}`)
   if(BMI < 18.5) {
     return `You are underweight`;
   } else if(BMI <= 18.5 && BMI > 24.9) {
